@@ -1,0 +1,12 @@
+3d/data/train/pointclouds/ 
+3d/data/train/masks/ 
+3d/data/test/pointclouds/
+3d/data/test/masks/
+3d/vis/ 
+3d/vis2/
+3d/__pycache__/
+3d/model.pth
+3d/data2/
+
+2d/__pycache__/
+2d/model.pkl 

@@ -54,7 +54,7 @@ def main():
         os.makedirs(tblogdir, exist_ok=True)
     writer = SummaryWriter(log_dir=tblogdir)
 
-    
+
     inputs = None
     train_dataset = config.get_dataset('train', cfg)
     val_dataset = config.get_dataset('val', cfg)

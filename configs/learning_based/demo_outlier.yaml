@@ -2,7 +2,7 @@
 inherit_from: configs/learning_based/outlier/ours_7x.yaml
 data:
   class: ['']
-  path: data/demo/shapenet_lamp
+  path: data/demo/custom
 train:
   out_dir: out/demo_shapenet_outlier
 test:

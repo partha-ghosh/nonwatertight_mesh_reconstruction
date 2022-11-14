@@ -152,13 +152,13 @@ def main():
         
         if generate_mesh:
             #! deploy the generator to a separate class
-            out = generator.generate_mesh(data)
+            out = generator.generate_mesh(data, cfg=cfg)
 
             v, f, points, normals, stats_dict = out
             time_dict.update(stats_dict)
 
             # Write output
-            mesh_out_file = os.path.join(mesh_dir, '%s.off' % modelname)
+            mesh_out_file = os.path.join(mesh_dir, '%s.ply' % modelname)
             export_mesh(mesh_out_file, scale2onet(v), f)
             out_file_dict['mesh'] = mesh_out_file
         

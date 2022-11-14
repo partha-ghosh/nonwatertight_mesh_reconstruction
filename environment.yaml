@@ -7,23 +7,22 @@ channels:
 dependencies:
   - python=3.8
   - pytorch=1.9.0
-  - torchvision=0.10.0
+  - torchvision
   - cudatoolkit=10.2
-  - numpy=1.18.1
-  - matplotlib=3.4.3
-  - pyyaml=5.3.1
-  - scipy=1.4.1
-  - tqdm=4.54.0
-  - trimesh=3.8.14
-  - igl=2.2.1
-  - tensorboard=2.6.0
+  - numpy
+  - matplotlib
+  - scipy
+  - tqdm
+  - trimesh
+  - igl
+  - tensorboard
   - pip
   - pip:
-    - plyfile==0.7
-    - open3d>=0.11.1
-    - scikit-image>=0.18.0
-    - python-mnist==0.7
-    - opencv-python>=4.4
-    - av==8.0.3
-    - pykdtree==1.3.4
-    - ipdb==0.13.7
+    - plyfile
+    - open3d
+    - scikit-image
+    - python-mnist
+    - opencv-python
+    - av
+    - pykdtree
+    - ipdb

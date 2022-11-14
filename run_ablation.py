@@ -1,0 +1,30 @@
+import os
+
+# os.system(f'mkdir -p out/demo_shapenet_outlier/mesh && mkdir -p out/demo_shapenet_outlier/pointcloud')
+# os.system(f'python gen_mask_psr2.py train 3 && python gen_mask_psr2.py test 3')
+# os.system(f'cd out/demo_shapenet_outlier && wget https://s3.eu-central-1.amazonaws.com/avg-projects/shape_as_points/models/ours_outlier_7x.pt && mv ours_outlier_7x.pt model_best.pt && rm unet.pt && rm unet_best.pt')
+# os.system(f'python train2.py configs/learning_based/demo_outlier.yaml --unet "[8, 16, 32, 64, 128]"')
+# os.system(f'mv metric.csv metrick3.csv')
+# os.system(f'mv metric.csv metrick3.csv')
+# os.system(f'mv out/demo_shapenet_outlier/vis out/demo_shapenet_outlier/visk3')
+
+# os.system(f'mkdir -p out/demo_shapenet_outlier/mesh && mkdir -p out/demo_shapenet_outlier/pointcloud')
+# os.system(f'python gen_mask_psr2.py train 5 && python gen_mask_psr2.py test 5')
+# os.system(f'cd out/demo_shapenet_outlier && wget https://s3.eu-central-1.amazonaws.com/avg-projects/shape_as_points/models/ours_outlier_7x.pt && mv ours_outlier_7x.pt model_best.pt && rm unet.pt && rm unet_best.pt')
+# os.system(f'python train2.py configs/learning_based/demo_outlier.yaml --unet "[8, 16, 32, 64, 128]"')
+# os.system(f'mv metric.csv metrick5.csv')
+# os.system(f'mv out/demo_shapenet_outlier/vis out/demo_shapenet_outlier/visk5')
+
+# os.system(f'mkdir -p out/demo_shapenet_outlier/mesh && mkdir -p out/demo_shapenet_outlier/pointcloud')
+# os.system(f'python gen_mask_psr2.py train 7 && python gen_mask_psr2.py test 7')
+# os.system(f'cd out/demo_shapenet_outlier && wget https://s3.eu-central-1.amazonaws.com/avg-projects/shape_as_points/models/ours_outlier_7x.pt && mv ours_outlier_7x.pt model_best.pt && rm unet.pt && rm unet_best.pt')
+# os.system(f'python train2.py configs/learning_based/demo_outlier.yaml --unet "[8, 16, 32, 64, 128]"')
+# os.system(f'mv metric.csv metrick7.csv')
+# os.system(f'mv out/demo_shapenet_outlier/vis out/demo_shapenet_outlier/visk7')
+
+os.system(f'mkdir -p out/demo_shapenet_outlier/mesh && mkdir -p out/demo_shapenet_outlier/pointcloud')
+os.system(f'python gen_mask_psr2.py train 9 && python gen_mask_psr2.py test 9')
+os.system(f'cd out/demo_shapenet_outlier && wget https://s3.eu-central-1.amazonaws.com/avg-projects/shape_as_points/models/ours_outlier_7x.pt && mv ours_outlier_7x.pt model_best.pt && rm unet.pt && rm unet_best.pt')
+os.system(f'python train2.py configs/learning_based/demo_outlier.yaml --unet "[8, 16, 32, 64, 128]"')
+os.system(f'mv metric.csv metrick9.csv')
+os.system(f'mv out/demo_shapenet_outlier/vis out/demo_shapenet_outlier/visk9')

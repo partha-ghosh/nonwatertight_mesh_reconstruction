@@ -1,7 +1,7 @@
 data:
   class: 'only_pcl'
   data_type: point
-  data_path: 'data/demo/wheel.ply'
+  data_path: 'data/thingi/x.obj'
   object_id: 0
   num_points: 20000
 model:

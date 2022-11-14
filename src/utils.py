@@ -242,18 +242,17 @@ def load_model_manual(state_dict, model):
 
     model.load_state_dict(new_state_dict)
 
-def mc_from_psr(psr_grid, pytorchify=False, real_scale=False, zero_level=0):
+def mc_from_psr(psr_grid, pytorchify=False, real_scale=False, zero_level=0, mask=None):
     '''
     Run marching cubes from PSR grid
     '''
     batch_size = psr_grid.shape[0]
     s = psr_grid.shape[-1] # size of psr_grid
     psr_grid_numpy = psr_grid.squeeze().detach().cpu().numpy()
-    
     if batch_size>1:
         verts, faces, normals = [], [], []
         for i in range(batch_size):
-            verts_cur, faces_cur, normals_cur, values = measure.marching_cubes(psr_grid_numpy[i], level=0)
+            verts_cur, faces_cur, normals_cur, values = measure.marching_cubes(psr_grid_numpy[i], level=0, mask=mask)
             verts.append(verts_cur)
             faces.append(faces_cur)
             normals.append(normals_cur)
@@ -262,7 +261,7 @@ def mc_from_psr(psr_grid, pytorchify=False, real_scale=False, zero_level=0):
         normals = np.stack(normals, axis = 0)
     else:
         try:
-            verts, faces, normals, values = measure.marching_cubes(psr_grid_numpy, level=zero_level)
+            verts, faces, normals, values = measure.marching_cubes(psr_grid_numpy, level=zero_level, mask=mask)
         except:
             verts, faces, normals, values = measure.marching_cubes(psr_grid_numpy)
     if real_scale:
